@@ -22,7 +22,7 @@ Help Licat establish the system of `CatsFish`!
 Each cell represents the amount of money that fish were sold on Monday, Tuesday, Wednesday, Thursday, and Friday. Fish has not been sold yet on Friday, so it remains as fish only. The gold bar is 100,000 nodes, and fish-3 is 3,000 nodes.
 
 1. Pick up all the gold bars sold each day and store them in a list.
-2. What is the minimum amount sold on Monday, Tuesday, Wednesday, Thursday, and Friday? Use `min` to print the minimum amount of money on the terminal.
+2. What is the minimum amount sold on Monday, Tuesday, Wednesday, Thursday, and Friday? Use `min()` to print the minimum amount of money on the terminal.
 3. On which day was the most sold? Print the day on the terminal. An event will be held on this day.
 4. On which day was the least sold? Print the day on the terminal. On this day, the store is closed.
 

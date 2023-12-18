@@ -13,7 +13,7 @@ Licat grasped the movement of fish, made a map, added iron plates below to preve
 
 ## Mission
 
-Catch all the `fish`` while avoiding the maze. Then output the number of caught fish to the terminal in the form of **Licat caught 3 fish!**.
+Catch all the `fish` while avoiding the maze. Then output the number of caught fish to the terminal in the form of **Licat caught 3 fish!**.
 
 
 ## Hints
