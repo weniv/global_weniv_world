@@ -1,41 +1,40 @@
-# 무료 밥차
+# Free Food Truck
 
-## 무료 밥차 `조건문` `논리 연산`
+## Free Food Truck `Conditional Statement` `Logical Operation`
 
-라이캣은 그동안 라이언 타운 바깥으로 은밀하게 금괴를 이동시켜왔습니다.
+Licat has been secretly moving gold bars outside of Lion Town.
 
-> '라이언 타운에서 1골드는 간식을 살 돈이지만 위니브월드에선 10가족이 10달을 먹고 살 수 있는 돈이다냥!'
+> 'They can buy snacks for 1 gold in Lion Town, but in Weniv World, 10 families can live with the money for 10 months, meow!'
 
-그는 믿을만한 직원들을 선별하여 이동시킨 금괴로 식자재를 구매하여 오랜 기간 밥차를 운영했습니다.
+He selected reliable employees and raised money with gold bars. And with the money, he’s been running a food truck for a long time.
 
-> "먹는 문제는 내가 해결해주겠다냥! 먹을 것을 걱정 말고, 입을 것을 걱정 말고, 잘 곳을 걱정 말고 더 큰 가치를 위해 시간을 써라냥!"
+> "I'll take care of the food, meow! So don't worry about what to eat, what to wear, and where to sleep. Spend time for bigger value, meow!"
 
-누가 그 밥차를 운영하는지 대부분은 몰랐지만, 많은 이들이 그 밥차를 기다려왔고 감사해왔습니다. 그렇게 어떤 이는 성장하고, 실력을 키워 누가 그 밥차를 운영하는지 알게 되었고 은밀히 그를 따르게 되었습니다.
+Most didn't know who ran the food truck, but many thanked for it. As time passed, some of them figured out who was running the food truck and secretly followed Licat.
 
-그중에서도 하티는 자신이 태어난 마을에 오랫동안 밥차가 왔었다는 것을 알고 있었습니다.
+Among them, Hati had been watching the food truck coming to the village where she was born for a long time.
 
-`캣네생선`에서 첩자 활동을 하며 누가 그 밥차를 운영하는지 알게 되었고 그가 보여주었던 진심, 그가 보여주었던 행동으로 하티의 마음이 흔들리고 있었습니다.
+Working as a spy on `CatsFish` market, she could find out who was running a food truck. Even though she was a spy, she became swayed by his sincerity.
 
-## 임무
+## Mission
 
-fish-1이 10마리 이상, goldbar가 10개 이상이면 밥차를 운영하는 (1, 4) 공간으로 들어갑니다.
-그리고 fish-1을 한 마리 놓고 밥차를 운영한다고 말해주세요.
+If there are 10 or more fish-1 and 10 or more gold bars, Licat enters the space (1, 4), puts a fish-1, and says that he is running a food truck.
 
-fish-1이 10마리 미만, goldbar가 10개 미만이면 밥차를 운영하는 (1, 4) 공간에서 밥차를 운영하지 않는다고 말해야 합니다. 두 조건이 동시 만족되어야 합니다.
+Otherwise, he should say that the food truck is not running in the space (1, 4). Both conditions must be satisfied.
 
 
-### 기본 코드
+### Basic Code
 
 ```python
-if 조건:
-    say('오늘은 밥차를 운영합니다!')
+if condition:
+    say('We are running a food truck!')
 else:
-    say('오늘은 밥차를 운영하지 않습니다!')
+    say('We are not running a food truck!')
 ```
 
 
-## 사용 코드
-아래 코드들을 조합하여 문제를 풀어주세요.
+## Hints
+Complete the mission by combining the codes below.
 ```python
 mission_start()
 mission_end()

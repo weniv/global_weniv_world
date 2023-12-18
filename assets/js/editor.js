@@ -11,17 +11,17 @@ const setHeader = (targetNode) => {
     const ul = document.createElement('ul');
     ul.setAttribute('class', 'btn-list');
     ul.innerHTML = `
-                <li class='show-tooltip' name='download code'>
+                <li class='show-tooltip' name='Download code'>
                     <button type='button' class='btn-code-download code-export'>
                         <span class='sr-only'>download code</span>
                     </button>
                 </li>
-                <li class='show-tooltip' name='upload code'>
+                <li class='show-tooltip' name='Upload code'>
                     <button type='button' class='btn-code-upload code-import'>
                         <span class='sr-only'>upload code</span>
                     </button>
                 </li>
-                <li class='show-tooltip' name='delete'>
+                <li class='show-tooltip' name='Delete'>
                     <button type='button' class='btn-close code-delete'>
                         <span class='sr-only'>delete code</span>
                     </button>
@@ -49,7 +49,7 @@ const setHeader = (targetNode) => {
                 // 만약 셀이 하나 밖에 없다면 동작하지 않는다.
                 if (document.querySelectorAll('py-repl').length === 1) {
                     alert(
-                        '셀이 하나 밖에 없는 경우, 코드를 삭제할 수 없습니다.',
+                        "If there's only one cell, you cannot delete the code.",
                     );
                     return;
                 }
@@ -71,7 +71,7 @@ const setAddCodeButton = (targetNode) => {
     buttonContainer.setAttribute('class', 'py-repl-btn-wrap');
     buttonContainer.innerHTML = `
         <button type='button' class='btn-add-code add-code-next'>
-            코드 추가
+            Add Code
         </button>
     `;
     // 중간 셀 추가 기능

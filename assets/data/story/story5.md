@@ -1,37 +1,37 @@
-# 직원의 승진
+# Employee Promotion
 
-## 직원의 승진 `문자열` `인덱싱` `슬라이싱` `메서드`
+## Employee Promotion `String` `Indexing` `Slicing` `Method`
 
-작은 생선가게는 `캣네생선`으로 이름을 바꾸고 더 큰 성장을 위해 주식회사가 되었습니다. 라이언 타운의 귀족들은 `캣네생선`의 급격한 성장을 경계하며 시기와 질투를 하게 됩니다.
+The small fish market has changed its name to `CatsFish` and has become a corporation. Due to such rapid growth, Lion Town's nobles started to get jealous.
 
-게다가 귀족들은 라이캣을 무너트리기 위해서 첩자까지 파견하기에 이릅니다. 라이캣은 이미 첩자가 새로 들어온 기술자 하티라는 것을 알고 있었어요. 뮤라가 라이캣에게 알려주었기 때문입니다.
+Several nobles sent spies to break down Licat. He already knew the spy because Mura had informed him who the spy was.
 
-> '첩자를 어떻게 하실 생각이신가요?'
+> 'How do you plan to handle the spy?'
 
-> '내보내도 또 들어올 거다냥, 그리고 더욱 은밀히 감출 것이다냥. 차라리 가까이 두자냥!'
+> 'She'll come back even if we send her out, and she'll hide even more secretly. So let's rather keep her close!'
 
-라이캣은 누구나 사용할 수 있는 병원을 설립한다라는 목표가 있었습니다. 그 병원은 돈이 있다고 설립할 수 있는 것이 아니라는 것을 라이캣은 알고 있었습니다. 위니브월드의 대부분의 사람들이 그의 편이 되어주어야 합니다. 심지어 적까지도요.
+Licat had the goal of establishing a hospital that anyone could use. He knew that the hospital could not be established just with the money. Most people in Weniv World should be on his side. Even the enemy.
 
-라이캣의 눈이 빛났습니다.
+His eyes sparkled.
 
 
-## 임무
+## Mission
 
-아래 문자열을 입력받아 뮤라는 최고 운영 책임자로, 첩자 하티는 최고 기술 책임자로 임명해 주세요. 아래 기본 코드를 복사해 놓고 터미널에 출력 문장이 출력될 수 있도록 해주세요.
+Take the input string below and appoint Mura as the COO and Hati as the CTO. Copy the template code and modify it so that the output statement is displayed on the terminal.
 
-### 기본 코드
+### Basic Code
 ```python
-공지문 = '대표 라이켓, 팀장 뮤라, 팀 리더 하티'
+announcement = 'CEO Licat, Team Lead Mura, Manager Hati'
 ```
 
-### 출력
+### Output
 ```python
-'최고 운영 책임자 뮤라, 최고 기술 책임자 하티로 임명합니다. - 대표 라이켓'
+'Appointing as COO Mura, CTO Hati - CEO Licat'
 ```
 
 
-## 사용 코드
-아래 코드들을 조합하여 문제를 풀어주세요.
+## Hints
+Complete the mission by combining the codes below.
 ```python
 mission_start()
 mission_end()

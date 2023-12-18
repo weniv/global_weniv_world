@@ -38,12 +38,12 @@ const renderContent = (markdownData) => {
 
             const heading = document.createElement('h3');
             heading.setAttribute('class', 'sl-ellipsis');
-            heading.innerHTML = `<span>${data.id}편</span>${data.title}`;
+            heading.innerHTML = `<span>EP ${data.id}.</span>${data.title}`;
 
             const button = document.createElement('button');
             button.setAttribute('type', 'button');
             button.setAttribute('class', 'btn-toggle');
-            button.innerHTML = `<span class="sr-only">스토리 여닫기</span>`;
+            button.innerHTML = `<span class="sr-only">open and close story</span>`;
 
             titleSection.append(heading, button);
 

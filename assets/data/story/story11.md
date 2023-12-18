@@ -1,21 +1,21 @@
-# 병원을 설립하겠어!
+# Hospital Establishment!
 
-## 병원을 설립하겠어! `반복문` `조건문` `무한반복`
+## Hospital Establishment! `Iteration Statement` `Conditional Statement` `Infinite Loop`
 
-"이제 병원을 세워야 겠다냥!"
+"Now it's time to build a hospital, meow!"
 
-캣은 처음 그의 뜻대로 병원을 세우기 위해 발품을 팔았습니다. 부지를 매입하고, 의사를 설득하고, 건축 설계, 법인 설립, 병원 등록까지 막히는 것이 없이 처리해 나갔어요. 그러나 문제는 전혀 생각지 못한 곳에서 터져 나왔습니다.
+Licat worked hard to establish a hospital according to his initial plan. He purchased land, convinced doctors, handled architectural design, established a corporation, and completed the hospital registration. However, the problem arose from an unexpected point.
 
-> "평민도 들어올 수 있는 병원이라니!? 그런 병원은 허락할 수 없흥! 크르릉!"
+> "A hospital where commoners can enter?! I cannot allow such a hospital! Grrr!"
 
-앞으로 위니브월드는 어떻게 될까요? 스토리는 계속됩니다. 앞으로의 스토리를 기대해주세요!
-
-
-## 임무
-
-병원을 설립하기 위해 (주) 캣네생선에 모아둔 모든 금액을 모아야 합니다. 맵을 돌아다니며 모든 다이아몬드를 줍는 코드를 작성해주세요. 골드바를 만나면 멈추고 전체 다이아몬드의 갯수를 출력해야 합니다.
+What will happen to Weniv World in the future? The story will be continued. Please look forward to the upcoming story!
 
 
-## 전체 스토리 링크
+## Mission
 
-링크 : [위니브월드: 새로운 시대](https://paullabworkspace.notion.site/08e6e80957d94459adeff743cbde9659?pvs=4)
+To establish a hospital, you need to gather all the funds collected by CatsFish Inc.
+ Write a code to roam around the map and collect all the diamonds. If you encounter a gold bar, stop and print the total number of diamonds.
+
+<!-- ## 전체 스토리 링크
+
+링크 : [위니브월드: 새로운 시대](https://paullabworkspace.notion.site/08e6e80957d94459adeff743cbde9659?pvs=4) -->

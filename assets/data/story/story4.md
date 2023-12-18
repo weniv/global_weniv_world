@@ -1,27 +1,28 @@
-# 지금까지 이런 맛은 없었다
+# Amazing Taste!
 
-## 지금까지 이런 맛은 없었다 `숫자 연산` `딕셔너리`
+## Amazing Taste! `Arithmetic Operators` `Dictionary`
 
-해골 섬에서 잡은 물고기는 살이 통통하고 맛이 일품이라 날이 갈수록 인기가 높아졌습니다. 심지어 다른 마을에서는 웃돈을 주고 생선을 사기까지 이르렀어요.
+The fish caught on Skull Island is so plump and delicious that its popularity has been increasing as days go by. Even people from other villages were willing to pay more to buy the fish.
 
-![고민에 빠진 라이캣](./story4-1.png)
+![Contemplating Licat](./story4-1.png)
 
-오늘은 생선가게에 비치된 물고기를 다 팔았을 때 매출액이 얼마나 나올지 계산해 보겠습니다.
+Today, let's calculate how much revenue we can make when all the displayed fish are sold.
 
-## 임무
+## Mission
 
-생선가게 있는 모든 `물고기`를 줍고, fish-1은 1000노드, fish-2는 2000노드, fish-3는 3000노드에 팔 경우 얼마의 매출액을 달성할 수 있는지 아래와 같이 터미널에 출력하세요. 아래 항목 중 `마리`는 item()를 사용해서 출력해야하며, 합은 `가격`과 `마리`를 곱해서 나온 값이어야 합니다. 
+Pick up all the `fish` in the market and calculate how much revenue can be achieved when selling fish-1 for 1000 nodes, fish-2 for 2000 nodes, and fish-3 for 3000 nodes. Output the result as shown below in the terminal. The `count` should be printed using `item()`, and the total should be the value obtained by multiplying `price` and `count`.
+
 ```python
-종류     마리    가격    합
-fish-1   2    1000   2000
-fish-2   3    2000   6000
-fish-3   5    3000   15000
-총 합                 23000
+type    count   price   total
+fish-1 2       1000   2000
+fish-2 3       2000   6000
+fish-3 5       3000   15000
+total                 23000
 ```
 
 
-## 사용 코드
-아래 코드들을 조합하여 문제를 풀어주세요.
+## Hints
+Complete the mission by combining the codes below.
 ```python
 mission_start()
 mission_end()

@@ -1,32 +1,32 @@
-# 청소하고 정리합시다!
+# Let’s Clean up and Organize! 
 
-## 청소하고 정리합시다! `딕셔너리`
+## Let’s Clean up and Organize!  `Dictionary`
 
-라이캣은 회사가 커질수록 바쁜 경영과 무거운 책임감에 지쳐갔습니다.
+As the company grew, Licat was worn out from the busy management and heavy responsibilities.
 
-> “매일이 바람 잘 날 없구냥. 이렇게까지 해야 할까냥? 왜 일을 하느냥? 앞으로 무엇을 더 할까냥?”
-> 
-
-라이캣은 온갖 생각이 정리되지 않은 채 `캣네생선` 가게를 돌아다니며 묵묵히 청소했습니다. 
-
-생선가게에는 골드바와 물고기들이 널브러져 있었습니다. 아무 생각 없이 청소할수록 몸은 힘들지만, 머릿속은 정리가 되어갔습니다.
-
-생각은 흘러가는 대로 두고, 단순한 일에 집중하니 머릿속에는 중요한 것만 남고, 문제는 어느새 단순화되었습니다.
+> “Every day is so exhausting. Do I have to do this much? Why do I work and what more can I do in the future?”
 
 
-## 임무
+With these various thoughts still unorganized, Licat went to `CatsFish` market and started to clean it. 
 
-다음과 같은 딕셔너리를 생성하고 골드바의 개수가 몇 개인지, 물고기의 개수가 몇 개인지 터미널에 출력하는 코드를 작성해주세요.
+The market was scattered with gold bars and fish. The more he cleaned, the more he could clear his mind.
 
-### 기본 코드
+Letting thoughts just go and focusing on simple tasks, only important things remained and the things had somehow simplified.
+
+
+## Mission
+
+Create the following dictionary and write a code to print the number of gold bars and the number of fish in the terminal.
+
+### Basic Code
 
 ```python
-d = {'골드바': 0, '물고기': 0}
+d = {'goldbar': 0, 'fish': 0}
 ```
 
 
-## 사용 코드
-아래 코드들을 조합하여 문제를 풀어주세요.
+## Hints
+Complete the mission by combining the codes below.
 ```python
 mission_start()
 mission_end()

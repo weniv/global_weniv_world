@@ -1,33 +1,33 @@
-# 캣의 결심
+# Cat’s Resolution 
 
-## 캣의 결심 `이동` `줍기` `말하기`
+## Cat’s Resolution  `move` `pick` `say`
 
-위니브 월드, 철저한 약육강식의 세계. 힘 있는 자는 지배하고 독식하며, 힘없는 자는 빼앗기고, 굶주리는 세계. 마법과 기계가 공존하는 세계입니다.
+Weniv World is a world of ruthless survival. Powerful ones dominate, and the weak are stripped and starved of hunger. It is also a place where magic and machinery coexist.
 
-캣은 위니브 월드 외곽에서 생선가게를 운영하는 평민입니다. 아픈 어머니를 대신하여 새벽이면 험한 바다에 나가 고기를 잡고, 오후가 되면 생선을 파는 생활을 반복하고 있는 지극히 평범한 소년이죠.
+Cat is a commoner who runs a fish market on the outskirts of Weniv World. In the early morning, he ventures into the treacherous sea to catch fish on behalf of his ailing mother, and he sells the fish in the afternoon. He is an extremely ordinary boy who repeats this life every day.
 
-"생선가게를 잘 부탁한다…"
+"Please take care of this fish market, my son…"
 
-어머니의 병세는 더욱 심해졌습니다. 위니브 월드에서 병원은 귀족만이 다닐 수 있는 곳, 평민은 죽어도 묻어주지도 않는 야속한 곳이었습니다. 
+His mothers' illnesses worsened. In Weniv World, however, the hospital is a place only nobles can access. It’s a brutal place for commoners where even death goes unnoticed.
 
-"지금 내가 가장 잘해야 할 것은 고기를 잡고 파는 것이다냥!"
+"What I need to do best now is catch and sell fish, meow!"
 
-캣은 지금 할 수 있는 것을 하기로 했습니다. 매일 무너지더라도 매일 일어났습니다. 무뎌지지 않도록 자신을 점검하고, 나약한 모습을 보이지 않도록 마음을 다잡았습니다.
+Cat decided to do what he could. He got up every day no matter how hard it was. He tried to keep his mind not to show his weakness.
 
-'평민도 이용할 수 있는 병원을 세우겠다냥!'
+'I'll build a hospital that even commoners can come, meow!'
 
-캣은 매일 번 돈으로 건강에 좋다는 음식과 약재로 어머니를 간호하고, 물고기를 잡으면서도 더 많은 물고기를 잡기 위해 스스로 단련하기를 쉬지 않았습니다. 어려운 기술을 접하더라도 밤낮을 가리지 않고 탐구했습니다. 매사에 의욕적이었고, 의욕적인 만큼 성과도 따라왔죠.
+Cat got healthy food and medicine with the money he earned every day to take care of his sick mother. He also trained himself to catch more fish and explored difficult skills day and night.
 
-시간은 지나가고, 그의 실력은 날로 높아져, 이제 위니브 월드에 그 누구도 캣만큼이나 고기를 많이 잡지 못하게 되었습니다.
-
-
-## 임무
-
-모든 고기를 잡고 자리로 되돌아와 "hello, world!"를 말합니다. `print`함수를 사용하지 않고 `say`를 사용해주세요.
+As time went on, his skills improved day by day. No one in Weniv World could catch as many fish as Cat.
 
 
-## 사용 코드
-아래 코드들을 조합하여 문제를 풀어주세요.
+## Mission
+
+Catch all the fish and return to the first spot, then say "hello, world!" Use the `say` function instead of `print` function.
+
+
+## Hints
+Complete the mission by combining the codes below.
 ```python
 mission_start()
 mission_end()

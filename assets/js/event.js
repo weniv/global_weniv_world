@@ -46,12 +46,12 @@ window.addEventListener('load', () => {
         localStorage.setItem('color-theme', 'dark');
         document.documentElement.setAttribute('color-theme', 'dark');
         darkModeButton.classList.add('active');
-        darkModeButton.setAttribute('name', '다크모드 OFF');
+        darkModeButton.setAttribute('name', 'Disable dark mode');
     } else {
         localStorage.setItem('color-theme', 'light');
         document.documentElement.setAttribute('color-theme', 'light');
         darkModeButton.classList.remove('active');
-        darkModeButton.setAttribute('name', '다크모드 ON');
+        darkModeButton.setAttribute('name', 'Enable dark mode');
     }
 });
 
@@ -60,12 +60,12 @@ darkModeButton.addEventListener('click', () => {
         localStorage.setItem('color-theme', 'light');
         document.documentElement.setAttribute('color-theme', 'light');
         darkModeButton.classList.remove('active');
-        darkModeButton.setAttribute('name', '다크모드 ON');
+        darkModeButton.setAttribute('name', 'Enable dark mode');
     } else {
         localStorage.setItem('color-theme', 'dark');
         document.documentElement.setAttribute('color-theme', 'dark');
         darkModeButton.classList.add('active');
-        darkModeButton.setAttribute('name', '다크모드 OFF');
+        darkModeButton.setAttribute('name', 'Disable dark mode');
     }
 });
 
@@ -90,7 +90,7 @@ storyShowButton.addEventListener('click', () => {
 
     if (storyShowButton.classList.contains('active')) {
         // TODO: 모달이나 토스트로 변경
-        alert('스토리 모드에서는 월드 편집 기능이 제한됩니다.');
+        alert('World editing is restricted in story mode.');
 
         wallEditButton.classList.remove('active');
         wallEditButton.setAttribute('disabled', true);
@@ -316,7 +316,7 @@ const copyToClipboard = (target) => {
     if (target.tagName == 'BUTTON' && target.classList.contains('code-item')) {
         const code = target.innerText;
         navigator.clipboard.writeText(code).then(() => {
-            alert('클립보드에 복사되었습니다.');
+            alert('Copied to the clipboard.');
         });
     }
 };
@@ -356,5 +356,5 @@ preloadImage([
     './assets/img/characters/licat-1.png',
     './assets/img/characters/licat-2.png',
     './assets/img/characters/licat-3.png',
-    './assets/img/icon/icon-alert-circle.svg'
+    './assets/img/icon/icon-alert-circle.svg',
 ]);

@@ -1,42 +1,42 @@
-# 여기는 은행인가 생선가게인가
+# Is This a Bank or a Fish Market?
 
-## 여기는 은행인가 생선가게인가 `비교 연산` `내장 함수` `리스트`
+## Is This a Bank or a Fish Market? `Comparison Operation` `Built-in Function` `List`
 
-라이캣은 병원을 짓는 것도 좋지만 돈을 버는 것만이 `캣네생선`의 목표가 될 수 없다고 생각했어요. 라이캣은 기업의 목표가 모두가 함께 가치 생산을 해내고, 무엇보다 직원들의 행복이 목적이라 생각했습니다.
+Licat wanted to establish a hospital, but he thought earning money could not be the only goal of `CatsFish Inc.` He believed that the company's goal was to produce value together, and above all, the happiness of employees.
 
-밤늦게까지, 주말까지 일하면서 그런 행복감을 느낄 수 있다고 생각하지 않았습니다. 그렇기에 더욱 많은 여유를 확보하기 위해 노력했어요.
+To make them happy, Licat made efforts to secure more spare time and not to let them work late into the night and on weekends.
 
-이를 위해 생산성의 향상이 필요했습니다. 어떻게 하면 생산성을 높일 수 있을까요? 더 적은 시간에 더 많이 생산하고 보다 많이 휴식을 확보할 수 있을까요?
+Therefore, they needed a productivity improvement. How could productivity be increased? How could more be produced in less time and more rest be secured?
 
-> "시스템이다냥! 시스템을 바꾸면서 함께 성장해야 한다냥!"
+> "It's a system! We need to grow together by changing the system!"
 
-전체 시스템을 다 바꾸기에는 회사의 규모가 너무 커졌기 때문에 작은 부분부터 바꿔가기로 했습니다.
+The size of the company became too big to change the whole system, so they decided to change the small part first.
 
-가장 먼저 물고기가 가장 덜 팔리는 요일은 쉬도록 하고, 방문이 많은 요일에는 이벤트를 열게 하여 더 많은 수익금을 얻을 수 있게 하였어요.
+First of all, they took a day off when the fish were sold least. And on days when there were the most sales, they held events so that they could earn more profits.
 
-라이캣을 도와 (주)캣네생선의 시스템을 구축하세요!
+Help Licat establish the system of `CatsFish`!
 
 
-## 임무
+## Mission
 
-각 칸은 월, 화, 수, 목, 금요일에 판매된 물고기 금액을 나타냅니다. 다만 금요일은 아직 물고기를 판매하지 못해 물고기로만 남아있습니다. 골드 바는 10만 노드, fish-3는 3000노드입니다.
+Each cell represents the amount of money that fish were sold on Monday, Tuesday, Wednesday, Thursday, and Friday. Fish has not been sold yet on Friday, so it remains as fish only. The gold bar is 100,000 nodes, and fish-3 is 3,000 nodes.
 
-1. 요일별 판매된 골드바를 모두 줍고 리스트에 담으세요.
-2. 월, 화, 수, 목, 금요일 중 가장 적게 판매된 금액은 얼마인가요? min를 사용하여 가장 적은 금액을 터미널에 출력하세요.
-3. 가장 많이 판매된 요일은 어떤 요일인지 터미널에 출력하세요. 이날에는 이벤트를 엽니다.
-4. 가장 적게 판매된 요일은 어떤 요일인지 터미널에 출력하세요. 이날은 쉽니다.
+1. Pick up all the gold bars sold each day and store them in a list.
+2. What is the minimum amount sold on Monday, Tuesday, Wednesday, Thursday, and Friday? Use `min` to print the minimum amount of money on the terminal.
+3. On which day was the most sold? Print the day on the terminal. An event will be held on this day.
+4. On which day was the least sold? Print the day on the terminal. On this day, the store is closed.
 
-### 출력
+### Output
 
 ```python
-가장 적은 금액: 30000
-이벤트 요일: 월요일
-쉬는 날: 금요일
+Minimum sales: 30000
+Event day: Monday
+Day off: Friday
 ```
 
 
-## 사용 코드
-아래 코드들을 조합하여 문제를 풀어주세요.
+## Hints
+Complete the mission by combining the codes below.
 ```python
 mission_start()
 mission_end()

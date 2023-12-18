@@ -1,41 +1,41 @@
-# 라이캣의 탄생
+# Advent of Licat 
 
-## 라이캣의 탄생 `이동` `줍기` `말하기`
+## Advent of Licat  `move` `pick` `say`
 
-캣의 어머니는 결국 악화되는 병세를 이기지 못하셨습니다. 흐르는 눈물을 참고, 마지막 가시는 길에 웃음을 보여드리기 위해 캣은 안간힘을 썼습니다. 그럼에도 아무것도 할 수 없는 자신의 무력함에 캣은 가슴이 무너지는 듯했어요.
+Cat's mother eventually couldn't overcome her worsening condition. Holding back tears, Cat did his best to show a smile on her final journey. Nevertheless, he was in full despair for being helpless to do anything.
 
-캣은 슬픔이 자신을 삼키지 못하도록 몸을 바쁘게 움직였습니다. 자신은 가족을 잃었지만, 병원을 지어 누군가의 가족은 지켜주고 싶었어요. 그렇게 시간이 흘러 캣은 성장했습니다. 누구보다 많은 물고기를 잡을 수 있게 되었고, 마을에 캣이 운영하는 생선가게보다 큰 가게는 없었어요. 하지만 여전히 병원은 너무나 큰 꿈이었습니다.
+Not to let sorrow pull him down, he kept to stay busy. He had lost his family, but he wanted to protect someone else's family by building a hospital. As time passed, Cat grew. He could catch more fish than anyone else, and there was no shop in town larger than Cat’s fish market. However, the hospital remained an unachievable dream.
 
-> "이렇게 벌어 병원을 세우려면 1억 3천 299년이 걸린다냥..."
+> "At this rate, it would take 100 million and 3299 years to build a hospital, meow…"
 
-캣은 더 많은 돈을 벌기 위해 사자들만 들어갈 수 있는 **라이언 타운**에 들어가기로 결심합니다. 라이언 타운은 왕족과 귀족 사자만 생활하는 곳이었습니다. 특히 평민은 엄격히 선별된 사람만 출입을 할 수 있는 곳이었어요.
+Cat decided to enter **Lion Town** to earn a huge amount of money. Lion Town is a place where only royal and noble lions can live. For commoners, only selected individuals could enter this town.
 
-한참을 고민하던 캣은 아주 기발한 생각을 하게 되었습니다.
+After a lot of thought, Cat came up with a clever idea.
 
-![사자탈을 쓴 라이캣](./story2-1.png)
+![Licat in a lion mask](./story2-1.png)
 
-> "사자탈을 쓰고 들어가면 된다냥!"
+> "I can just wear a lion mask and get in, meow!"
 
-간단한 방법으로 라이언 타운에 들어갈 수 있을 줄 알았지만, 생각보다 관문을 지키는 문지기들은 그리 호락호락하지 않았어요. 살벌한 검문 검색에 캣은 입장 시도조차 못 하고 고민에 다시 빠졌습니다.
+He called himself Licat after Cat wearing a lion mask. Licat thought it would be easy to enter Lion Town, but the gatekeepers were not as lenient as he expected. Denied entry after a strict inspection, he had to agonize again.
 
-그때, 직원 중 한 명인 뮤라가 찾아와 정보를 주었어요. 뮤라는 항상 침묵하고 있었기에 속마음을 알기 어려웠지만, 한 번 입을 열 때마다 캣에게 큰 도움을 주었습니다.
+At that moment, a staff named Mura came to give him information. Mura looked calm and cold-hearted, so it was difficult to know what she was thinking. But every time she said a word, she was of great help to Licat.
 
-> "**라이언 타운으로 가는 비밀통로**가 있어요. 그곳을 통과하면 라이언 타운에 인적이 없는 변두리로 이어집니다. 라이언 타운 안에서는 검문 검색을 하지 않으니, 그 옷으로도 충분히 생활할 수 있을 겁니다. 부디 이루고자 하는 꿈을 이루시길."
+> "There is a **secret passage to Lion Town**. If you pass there, it would lead to an outskirt of Lion Town. There are few people and they don't conduct inspections, so you should be able to live there comfortably in those clothes. I hope you achieve the dream you want."
 
-캣은 감사인사를 전하고 뮤라가 알려준 곳으로 이동했습니다. 비밀통로는 복잡한 하수구의 미로 끝에 있었어요. 문에 손을 얹자 문이 말하기 시작했습니다!
+Licat expressed gratitude to Mura and moved to the location. The secret passage was at the end of a complex maze. When Licat placed his hand on the door, it began to speak!
 
-![말하는 문을 만난 라이캣](./story2-2.png)
+![Licat in front of the talking door](./story2-2.png)
 
-> *"**이 문은 왕의 자격을 갖춘 자만이 지나갈 수 있는 길!** 이제부터 너의 자격을 검증하겠다! 크르릉!!"*
-
-
-## 임무
-
-말하는 문 열쇠인 `다이아몬드`가 미로 안에 생성되었습니다! 미로에서 `다이아몬드`를 찾고, **'문을 열어줘!'**를 외쳐야 합니다!
+> *"**This door is only for those with the qualifications of the king!** From now on, I will verify your qualifications! Grrrr!!"*
 
 
-## 사용 코드
-아래 코드들을 조합하여 문제를 풀어주세요.
+## Mission
+
+The key to the talking door, the `diamond`, has been generated in the maze. Find the `diaond` and shout **'Open the door!'**
+
+
+## Hints
+Complete the mission by combining the codes below.
 ```python
 mission_start()
 mission_end()
