@@ -656,7 +656,7 @@ class Character:
         # if pos not in wall_data['world'].keys():
             return 'OutOfWorld'
             
-        return wall_data["world"][pos]
+        return wall_data["world"].get(pos, None)
 
     def _front_wall(self):
         directions = self.directions
