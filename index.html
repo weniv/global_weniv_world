@@ -12,7 +12,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-XPF3L7HN8R');
     </script>
 
@@ -65,7 +64,7 @@
 
         [[fetch]]
         from = "./assets/py/"
-        files = ["built_in_functions.py", "character.py", "map.py", "wall.py", "item.py", "coordinate.py", "modules.py", "error.py","mob.py"]
+        files = ["built_in_functions.py", "character.py", "map.py", "wall.py", "item.py", "coordinate.py", "modules.py", "error.py"]
     </py-config>
 </head>
 <body>
@@ -459,11 +458,10 @@
         from map import Map
         from wall import Wall
         from character import Character
-        from mob import Mob
         from item import Item
         from error import *
         from coordinate import map_data, running_speed, character_data, default_character, mob_data, item_data, wall_data, valid_items, edible_items,wall_type, story_wall, mob_info, skills, character_info
-        from built_in_functions import print, say, directions, item, set_item, move, turn_left, pick, put, repeat, attack, front_is_clear, left_is_clear, right_is_clear, back_is_clear, open_door, typeof_wall, mission_start, mission_end, on_item, mob_exist, character_exist, _show_modal, eat
+        from built_in_functions import print, say, directions, item, set_item, move, turn_left, pick, put, repeat, attack, front_is_clear, left_is_clear, right_is_clear, back_is_clear, open_door, typeof_wall, mission_start, mission_end, on_item, _show_modal
         from pyscript import when
         from js import alert, setTimeout
         from pyodide.ffi import create_once_callable
@@ -766,14 +764,14 @@
                         <dt class="bubble-body-item-title">아이템</dt>
                         <dd class="bubble-body-item-content">{character_data[0]['items']}</dd>
                     </div>
-                    <div class="info-item">
+                    <!-- <div class="info-item">
                         <dt class="bubble-body-item-title">체력</dt>
                         <dd class="bubble-body-item-content">{character_data[0]['hp']} / {character_data[0]['character_obj'].initHp}</dd>
                     </div>
                     <div class="info-item">
                         <dt class="bubble-body-item-title">마나</dt>
                         <dd class="bubble-body-item-content">{character_data[0]['mp']} / {character_data[0]['character_obj'].initMp}</dd>
-                    </div>
+                    </div> -->
                 </dl>
                 <button type="button" id="init_character" class="btn-reset">
                     <span class="sr-only">캐릭터 초기화</span>
@@ -1175,134 +1173,6 @@
         def story_close(evt=None):
             story_select['status'] = False
             init()
-
-        def add_mob(x, y, mob_type, name):
-            '''
-            몬스터를 추가하는 함수
-            순환 참조로 인해 이 함수만 index.html에 있음
-            
-            테스트 코드:
-            add_mob('lion', 4, 4)
-            add_mob('mob1', 3, 3)
-            add_mob('mob2', 3, 2)
-            add_mob('mob3', 2, 3)
-            '''
-            global mob_data
-            
-            if int(x) != x or int(y) != y or mob_type not in mob_info.keys() or not name:
-                alert_error('InvalidSyntax')
-                raise InvalidSyntax
-            
-            if not (0 <= x < map_data['height'] and 0 <= y < map_data['width']):
-                alert_error('OutOfWorld')
-                raise OutOfWorld
-
-            if character_exist(x, y) or mob_exist(x, y):
-                alert_error('ObstacleExist')
-                raise ObstacleExist
-
-            elif name and mob_type:
-                for m in mob_data:
-                    if m['name'] == name:
-                        alert_error('MobIsExist')
-                        raise MobIsExist
-                        
-                if mob_type == 'lion':
-                    lion = Mob(x=x, y=y, mob='lion', name = name, width=32, height=40, initHp = 250)
-                    mob_data.append(
-                        {
-                            'name': name,
-                            'mob': 'lion',
-                            'mob_obj': lion,
-                            'x': x,
-                            'y': y,
-                            'directions': 0, # 0(동, 오른쪽), 1(북), 2(서, 왼쪽), 3(남),
-                            'hp':250,
-                            'power':50,
-                        }
-                    )
-                    draw_ch = lion.draw()
-                    draw_map.appendChild(draw_ch)
-
-                    return lion
-                    
-                elif mob_type[:3] == 'mob':
-                    mob = Mob(x=x, y=y, mob=f'mob{mob_type[-1]}',name=name, width=32, height=40, initHp = 50)
-                    mob_data.append(
-                        {
-                            'name': name,
-                            'mob': f'mob{mob_type[-1]}',
-                            'mob_obj': mob,
-                            'x': x,
-                            'y': y,
-                            'directions': 0, # 0(동, 오른쪽), 1(북), 2(서, 왼쪽), 3(남),
-                            'hp':50,
-                            'power':5
-                        }
-                    )
-                    draw_ch = mob.draw()
-                    draw_map.appendChild(draw_ch)
-                    return mob
-            else:
-                return None
-
-        def add_ch(x, y, name):
-            global character_data
-            
-            if int(x) != x or int(y) != y:
-                alert_error('InvalidSyntax')
-                raise InvalidSyntax
-
-            if name not in character_info.keys():
-                alert_error('InvalidCharacter')
-                raise InvalidCharacter
-            
-            if not (0 <= x < map_data['height'] and 0 <= y < map_data['width']):
-                alert_error('OutOfWorld')
-                raise OutOfWorld
-            
-            if character_exist(x, y) or mob_exist(x,y):
-                alert_error('ObstacleExist')
-                raise ObstacleExist
-
-            # character는 중복 미허용
-            for c in character_data:
-                if c.get('character', '') == name:
-                    alert_error('CharacterIsExist')
-                    raise CharacterIsExist
-                    
-            if name == default_character:
-                character_data.insert(0, 
-                    {
-                        'character': name,
-                        'character_obj': None,
-                        'x': x,
-                        'y': y,
-                        'directions': 0, # 0(동, 오른쪽), 1(북), 2(서, 왼쪽), 3(남)
-                        'items': {},
-                        'hp':100,
-                        'power':10,
-                    }
-                )
-            else:
-                character_data.append(
-                    {
-                        'character': name,
-                        'character_obj': None,
-                        'x': x,
-                        'y': y,
-                        'directions': 0, # 0(동, 오른쪽), 1(북), 2(서, 왼쪽), 3(남)
-                        'items': {},
-                        'hp':100,
-                        'power':10,
-                    }
-                )
-            char = Character(x=x, y=y, name=name, width=32, height=40)
-            char._set_character_data('character_obj',char)
-            draw_ch=char.draw()
-            draw_map.appendChild(draw_ch)
-            return char
-        
 
         @when("click", selector=".btn-assets")
         def item_active(evt=None):

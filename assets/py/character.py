@@ -12,6 +12,7 @@ from coordinate import (
     edible_items,
     skills,
     wall_blocked,
+    wall_types,
     wall_data,
     running_speed,
 )
@@ -62,9 +63,9 @@ class Character:
         # character.style.width = f"{self.width}px"
         # character.style.height = f"{self.height}px"
         hp = self.draw_hp()
-        character.appendChild(hp)
+        # character.appendChild(hp)
         mp = self.draw_mp()
-        character.appendChild(mp)
+        # character.appendChild(mp)
         # next value(px) : (-1, -3), (-33, -1), (-65, -2), (-97, -3), (-129, -2), (-161, -1), (-193, -2)
         character.style.top = f"{self.x * 100 + 2 + (50 - 32)}px"
         character.style.left = f"{self.y * 100 + 2 + (50 - 32)}px"
@@ -325,6 +326,10 @@ class Character:
         if not 0<=nx<map_data["height"] or not 0<=ny<map_data["width"]:
             alert_error('OutOfWorld')
             raise OutOfWorld
+            
+        if self.typeof_wall() in wall_types:
+            alert_error('WallIsExist')
+            raise WallIsExist
             
         m_obj=None
         mob_name=''
@@ -689,52 +694,3 @@ class Character:
                 return c[key]
         return None
     
-    def eat(self, item_name):
-        self.running_time += 1000 * running_speed
-        
-        if item_name not in valid_items:
-            setTimeout(create_once_callable(lambda: alert_error('InvalidItem')), self.running_time)
-            setTimeout(create_once_callable(lambda: self.init_time()), self.running_time) 
-            
-            
-            raise InvalidItem
-        
-        if item_name not in edible_items.keys():
-            setTimeout(create_once_callable(lambda: alert_error('InedibleItem')), self.running_time)
-            setTimeout(create_once_callable(lambda: self.init_time()), self.running_time) 
-            raise InedibleItem
-        
-        item_data = self._get_character_data('items')
-        if item_name not in item_data.keys():
-            setTimeout(create_once_callable(lambda: alert_error('ItemIsNotExist')), self.running_time)
-            setTimeout(create_once_callable(lambda: self.init_time()), self.running_time) 
-            raise ItemIsNotExist
-        
-
-        say("냠냠")
-        if item_data[item_name]==1:
-            del item_data[item_name]
-        else:
-            item_data[item_name]-=1
-        
-        item_hp = edible_items[item_name].get('hp',0)
-        item_mp = edible_items[item_name].get('mp',0)
-        if self.hp + item_hp > self.initHp:
-            self.hp = self.initHp
-        else: 
-            self.hp += item_hp
-            
-        if self.mp + item_mp > self.initMp:
-            self.mp=self.initMp
-        else:
-            self.mp += item_mp
-            
-        self._set_character_data("hp",self.hp)
-        self._set_character_data("mp",self.mp)
-        
-        setTimeout(create_once_callable(lambda: self._hp_animation()), self.running_time)
-        setTimeout(create_once_callable(lambda: self.init_time()), self.running_time)
-        
-        setTimeout(create_once_callable(lambda: self._mp_animation()), self.running_time)
-        setTimeout(create_once_callable(lambda: self.init_time()), self.running_time)
-       

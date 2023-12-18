@@ -287,56 +287,7 @@ def on_item(character=None):
         else:
             alert_error('CharacterIsNotExist')
             raise CharacterIsNotExist
-
-# 작동하지만 시기상조로 인해 주석처리  
-# def change_img():
-#     '''
-#     주인공 캐릭터의 이미지를 바꾸는 함수
-#     '''
-#     character = js.document.querySelector(".character")
-#     character.style.backgroundImage = f'url("assets/img/characters/lion.png")'
-
-# def add_ch():
-#     '''
-#     캐릭터를 추가하는 함수
-#     순환 참조로 인해 이 함수만 index.html에 있음
-#     '''
-#     pass
-
-def submit():
-    '''
-    통계보고서 처리를 위한 정답 확인용 함수
-    캐릭터의 위치, 프린트된 결과, 말한 결과 등을 수집하여 정답 여부 확인
-    '''
-    pass
-
-def mob_exist(x, y):
-    for m in mob_data:
-        if m.get('x',-1) == x and m.get('y',-1) == y:
-            return True
-    return False
-
-def character_exist(x, y):
-    for c in character_data:
-        if c.get('x',-1) == x and c.get('y',-1) == y:
-            return True
-    return False
-
-
-def eat(item, character=None):
-    global command_count
-    command_count += 1
-    
-    if character != None:
-        character.eat(item)
-    else:
-        if len(character_data) and len(character_data) and character_data[0]["character_obj"] != None:
-            character_data[0]["character_obj"].eat(item)
-        else:
-            alert_error('CharacterIsNotExist')
-            raise CharacterIsNotExist
-            
-            
+     
 # utility function
 def _show_modal(message):
     toast = js.document.querySelector('.toast')
