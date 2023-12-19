@@ -12,7 +12,7 @@ Cat decided to enter **Lion Town** to earn a huge amount of money. Lion Town is 
 
 After a lot of thought, Cat came up with a clever idea.
 
-![Licat in a lion mask](./story2-1.png)
+![Licat in a lion mask](./story2-3.png)
 
 > "I can just wear a lion mask and get in, meow!"
 
@@ -24,7 +24,7 @@ At that moment, a staff named Mura came to give him information. Mura looked cal
 
 Licat expressed gratitude to Mura and moved to the location. The secret passage was at the end of a complex maze. When Licat placed his hand on the door, it began to speak!
 
-![Licat in front of the talking door](./story2-2.png)
+![Licat in front of the talking door](./story2-4.png)
 
 > *"**This door is only for those with the qualifications of the king!** From now on, I will verify your qualifications! Grrrr!!"*
 

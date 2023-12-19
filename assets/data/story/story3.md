@@ -4,7 +4,7 @@
 
 After successfully sneaking into Lion Town, Licat was able to quickly settle down. The reason is that he is one of the brave fishermen who can catch fish around the Skull Island, where the most fish are caught in Weniv World. As the name implies, Skull Island had so many reefs and strong currents that countless fishermen lost their lives.
 
-![Licat heading to Skull Island](./story3-1.png)
+![Licat heading to Skull Island](./story3-2.png)
 
 Licat grasped the movement of fish, made a map, added iron plates below to prevent the boat from sinking on the reefs, and improved the net with a better rope.
 
