@@ -33,7 +33,7 @@ item()['fish-1']
 ```
 
 
-## Intermediate-Level Hints
+## Intermediate-level Hints
 
 ```python
 if

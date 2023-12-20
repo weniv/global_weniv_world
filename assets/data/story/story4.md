@@ -14,10 +14,10 @@ Pick up all the `fish` in the market and calculate how much revenue can be achie
 
 ```python
 type    count   price   total
-fish-1 2       1000   2000
-fish-2 3       2000   6000
-fish-3 5       3000   15000
-total                 23000
+fish-1  2       1000    2000
+fish-2  3       2000    6000
+fish-3  5       3000    15000
+total                   23000
 ```
 
 
